@@ -21,7 +21,7 @@ class Product
         $this->price = $price;
     }
 
-    public function computeTVA(): float
+    public function computeTVA(): float | Exception
     {
 
         if ($this->price < 0) {
